@@ -1,0 +1,114 @@
+$nav: 40px;
+$nav-mb: 10px;
+$con-width: 950px;
+$ser-w: 200px;
+$ser-h: 26px;
+$icon-lh: 14px;
+
+/**
+ * =reSet.css 
+ **/
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+div {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+input {
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+.fl-left {
+    float: left;
+}
+
+/**
+ * =nav.css
+ **/
+.nav {
+    height: $nav;
+    margin-bottom: $nav-mb;
+    line-height: $nav;
+    background: #222;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-family: "Helvetica Neue",Arial,"Microsoft Yahei",sans-serif;
+}
+.nav-con {
+    width: $con-width;
+    height: 100%;
+    background: red;
+    margin: 0 auto;
+    div {
+        height: 100%;
+    }
+    i {
+        display: block;
+        height: 100%;
+    }
+    form {
+        margin-top: 7px;
+        width: $ser-w;
+        height: $ser-h;
+        padding: 3px 6px;
+        background: #4e4e4e;
+        box-shadow: inset 0 2px 4px rgba(0,0,0,0.3),0 1px 0 #2a2a2a;
+        box-sizing: border-box;
+        border: 1px solid #141414;
+        border-radius: 3px;
+
+        i {
+            float: left;
+            margin: 1px 5px 0 0;
+            width: 15px;
+            height: 15px;
+            line-height: 14px;
+            vertical-align: text-top;
+            background: url(img/topbar.png) no-repeat transparent 0 -60px;
+        }
+        input {
+            float: left;
+            width: 143px;
+            height: 18px;
+            font-size: 12px;
+            color: #222;
+            background: 0;
+        }
+    }
+}
+.logo {
+    width: 90px;
+    margin-right: 10px;
+    background: url(img/topbar.png) no-repeat transparent 0 0;
+}
+.phone {
+    display: inline-block;
+    margin-right: 15px;
+    width: 82px;
+    height: 24px;
+    background: #2d2d2d;
+    color: #ababab;
+    font-size: 12px;
+    border-radius: 3px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+
+    i {
+        display: inline-block;
+        margin-right: 6px;
+        width: 9px;
+        height: $icon-lh;
+        background: url(img/topbar.png) no-repeat transparent 0 -40px;
+        line-height: $icon-lh;
+        vertical-align: text-top;
+    }
+}
+
