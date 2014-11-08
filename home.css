@@ -15,9 +15,12 @@ div {
   margin: 0; }
 
 a {
+  padding: 0;
+  margin: 0;
   text-decoration: none; }
 
 input {
+  margin: 0;
   padding: 0;
   border: 0;
   outline: none; }
@@ -29,6 +32,9 @@ ul {
 
 .fl-left {
   float: left; }
+
+.tab-a {
+  background: #fff; }
 
 .tab-a td {
   width: 189px;
@@ -170,6 +176,7 @@ ul {
   font-size: 14px;
   text-indent: 10px;
   line-height: 32px;
+  vertical-align: text-top;
   border-bottom: 1px solid #ccc; }
 
 .config {
@@ -180,15 +187,15 @@ ul {
     color: #0088c8;
     text-decoration: underline; }
 
-.my-col {
-  background: #fff; }
-
 .my-col td {
   background: url(img/bg.gif) no-repeat -112px -94px; }
   .my-col td:hover {
     background: url(img/bg.gif) no-repeat -303px -94px; }
 
 /* brand */
+.brand {
+  margin-bottom: 15px; }
+
 .brand .title {
   text-indent: 1px; }
 
@@ -201,14 +208,78 @@ ul {
   .go-brand:hover {
     text-decoration: underline; }
 
+/* rest */
 .check-res {
   color: #333;
-  font-size: 14px;
-  line-height: 30px; }
+  font-size: 14px; }
   .check-res:hover {
     text-decoration: underline; }
   .check-res span {
     color: #fe6000;
     font: normal 20px/1em Arial,'Helvetica Neue',sans-serif; }
+
+/* qa */
+.qa {
+  margin: 30px 0;
+  height: 93px;
+  text-align: center; }
+  .qa a {
+    display: inline-block;
+    margin-right: 50px;
+    width: 150px;
+    height: 93px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
+    .qa a:last-child {
+      margin-right: 0; }
+  .qa img {
+    display: inline-block; }
+
+/* more-res */
+/* footer */
+.footer {
+  margin: 30px 0 20px; }
+  .footer ul {
+    display: block;
+    margin: 0 0 10px;
+    width: 100%;
+    text-align: center; }
+  .footer ul li {
+    display: inline-block;
+    padding: 0 10px;
+    border-left: 1px solid #777;
+    font-size: 13px; }
+    .footer ul li:first-child {
+      border-left: 0; }
+    .footer ul li a {
+      color: #08c; }
+      .footer ul li a:hover {
+        text-decoration: underline; }
+  .footer p {
+    text-align: center; }
+
+.copyright {
+  margin: 0 0 15px;
+  color: #777; }
+
+.info {
+  height: 32px; }
+  .info a {
+    float: left;
+    padding: 0 20px;
+    color: #666;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left; }
+    .info a:first-child {
+      border-right: 1px solid #bbb; }
+  .info i {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    width: 32px;
+    height: 32px; }
+
+.icon-icp {
+  background: url(img/global-sprites.png) no-repeat 0 0; }
 
 /*# sourceMappingURL=home.css.map */
