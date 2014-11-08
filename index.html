@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
+    <div class="fix-btn"><a href="###">开店</a></div>
     <div class="nav">
         <div class="nav-con">
-            <i class="logo fl-left"></i>
+            <abbr title="饿了么"><i class="logo fl-left"></i></abbr>
             <div class="fl-left"><a class="phone" href="###"><i></i>手机客户端</a></div>
             <form class="fl-left" action="">
                 <i></i>
@@ -30,8 +31,19 @@
     </div>
     <div class="container">
         <div class="breadcrumb">上海中为智能机器人有限公司&nbsp;&nbsp;&nbsp;&nbsp;<a href="###">[切换地址]</a></div>
-        <div class="ad"></div>
-        <div class="collection">
+        <div class="ad">
+            <ul>
+                <li>
+                    <img src="img/banner.gif" alt="">
+                </li>
+            </ul>
+            <ol class="slider">
+                <li class="slider-1">1</li>
+                <li class="slider-2">2</li>
+                <li class="slider-3">3</li>
+            </ol>
+        </div>
+        <div class="collection bs-1">
             <div class="title">我的收藏 <a class="config" href="###">设置</a></div>
             <table class="my-col tab-a">
                 <tr>
@@ -43,14 +55,26 @@
                 </tr>
             </table>
         </div>
-        <div class="brand">
+        <div class="brand bs-1">
             <div class="title">
                 <a class="go-brand" href="###">前往品牌馆</a>
                 <a class="check-res" href="###">查看<span>55</span>家品牌餐厅</a>
             </div>
             <table class="tab-a">
                 <tr>
-                    <td></td>
+                    <td>
+                        <div class="item">
+                            <img class="res-pic" src="img/res1.png" alt="">
+                            <a href="###" class="res-name">问彩云何处飞，愿乘风永相随</a>
+                            <div class="time">2分钟</div>
+                            <div class="type">中式</div>
+                            <div class="star"></div>
+                            <span class="quantity">1222订单</span>
+                            <div class="special">
+                                <span class="tag-new"></span>
+                            </div>
+                        </div>
+                    </td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -58,19 +82,33 @@
                 </tr>
             </table>
         </div>
-        <div class="rest">
+        <div class="rest bs-1">
             <div class="title">
-                <input type="checkbox" name="hot-res" checked="checked">
-                <label for="hot-res">热门餐厅</label>
-                <input id="" type="checkbox" name="open">
-                <label for="open">营业中</label>
-                <input id="" type="checkbox" name="pay-online">
-                <label for="pay-online">在线支付</label>
+                <span class="box-wrap">
+                    <input type="checkbox" name="hot-res" checked="checked">
+                    <label for="hot-res">热门餐厅</label>
+                </span>                
+                <span class="box-wrap">
+                    <input id="" type="checkbox" name="open">
+                    <label for="open">营业中</label>
+                </span>                
+                <span class="dashed"></span>
+                <span class="box-wrap">
+                    <input id="" type="checkbox" name="pay-online">
+                    <label for="pay-online">在线支付</label>
+                </span>                
+                <span class="dashed ml10"></span>
                 <select id="" name="">
                     <option value="">口味</option>
+                    <option value="">全部</option>
+                    <option value="">中式</option>
                 </select>
+                <div class="pick">
+                    <span class="start">起送价</span>
+                    <span class="progress"></span>
+                    <span class="end">全部</span>
+                </div>      
             </div>
-            <div class="title"></div>
             <table class="tab-a">
                 <tr>
                     <td></td>
@@ -98,7 +136,23 @@
                 <img src="img/qa5.gif" alt="">
             </a>
         </div>
-        <div class="more-res">
+        <div class="groupbuy bs-1">
+            <div class="title">附近团购</div>
+            <table class="tab-a">
+                <tr>
+                    <td>
+                        <div class="item">
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="more-res bs-1">
             <div class="title">更多餐厅</div>
             <table class="tab-a">
                 <tr>
