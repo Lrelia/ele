@@ -4,6 +4,8 @@ $con-width: 950px;
 $ser-w: 200px;
 $ser-h: 26px;
 $icon-lh: 14px;
+$night-c: #0088c8;
+$day-c: #c0deed;
 
 /**
  * =reSet.css 
@@ -14,7 +16,8 @@ html, body {
     padding: 0;
     margin: 0;
     font-size: 13px;
-    background: #0088c8;
+    /* background: #0088c8; */
+    background: $day-c;
 }
 div {
     padding: 0;
@@ -35,6 +38,10 @@ ul {
 }
 .fl-left {
     float: left;
+}
+.tab-a td {
+    width: 189px;
+    height: 92px;
 }
 
 /**
@@ -156,10 +163,86 @@ ul {
 }
 
 /**
- * =part1 
+ * =content 
  */
+.container {
+    margin: 0 auto;
+    width: $con-width;
+}
 .breadcrumb {
-    margin: 5px 0 10px;
+    position: relative;
+    margin: 15px 0 10px;
+    color: $night-c;
+    a {
+        color: $night-c;
+    }
+}
+
+/* advertisement */
+.ad {
+    margin-bottom: 10px;
+    height: 80px;
+    background: green;
+}
+
+/* collection */
+.collection {
+    margin-bottom: 15px;
+}
+.title {
+    height: 32px;
+    background-color: #fbfbfb;
+    background-image: -webkit-linear-gradient(top, #fff, #f5f5f5);
+    background-image: linear-gradient(top, #fff, #f5f5f5);
+    color: #333;
+    font-size: 14px;
+    text-indent: 10px;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+}
+.config {
+    float: right;
+    margin-right: 10px;
+    color: #999;
+    &:hover {
+        color: #0088c8;
+        text-decoration: underline;
+    }
+}
+.my-col {
+    background: #fff;
+}
+.my-col td{
+    background:  url(img/bg.gif) no-repeat -112px -94px;;
+    &:hover {
+        background: url(img/bg.gif) no-repeat -303px -94px;
+    }
+}
+
+/* brand */
+.brand .title {
+    text-indent: 1px;
+}
+.go-brand {
+    padding: 0 6px;
+    background: #0c9efc;
     color: #fff;
+    border-radius: 2px;
+    font-size: 16px;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.check-res {
+    color: #333;
+    font-size: 14px;
+    line-height: 30px;
+    &:hover {
+        text-decoration: underline;
+    }
+    span {
+        color: #fe6000;
+        font: normal 20px/1em Arial,'Helvetica Neue',sans-serif;
+    }
 }
 
